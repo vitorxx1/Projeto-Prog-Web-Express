@@ -1,0 +1,156 @@
+.modal-container{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.show{
+  display: flex;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 300px;
+  background-color: #FFF;
+  border-radius: 5px;
+  position: relative;
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+
+.show .container{
+  animation: modal .5s;
+}
+
+.exitModal{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.greeting{
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome{
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FF7A00;
+  margin-bottom: 6px;
+}
+
+.yourAccount{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #000;
+  opacity: .3;
+  letter-spacing: 0.8px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 200px;
+  margin-left: 40px;
+}
+
+.errorMessage{
+  display: none;
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: red;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.content-area-login input{
+  width: 100%;
+  height: 25px;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 20px;
+  outline: none;
+}
+
+.content-area-login input:focus{
+  border: 2px solid #FF7A00;;
+}
+
+.content-area-password input{
+  width: 100%;
+  height: 25px;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.content-area-password input:focus{
+  border: 2px solid #FF7A00;;
+}
+
+.submitBtn{
+  width: 50%;
+  margin: 0 auto;
+  background-color: #FF7A00;;
+  border: none;
+  border-radius: 50px;
+  height: 35px;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.submitBtn:hover{
+  background-color: #fff;
+  border: 1px solid #FF7A00;;
+  color: #FF7A00;;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container{
+    width: 75%;
+  }
+
+  .content{
+    width: 75%;
+  }
+}

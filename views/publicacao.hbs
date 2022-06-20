@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/publicacao.css">
+    <title>{{titulo}}</title>
+</head>
+<body>
+    
+    <div id="wrapper" >
+        
+        <div id="content">
+
+            <div id="publicacao">
+
+                <div id="titulo"><h1>{{titulo}}</h1></div>
+
+                <div id="infos">
+                    <p>
+                        <strong>Autor: </strong>{{username}}
+                    </p>
+
+                    <p>
+                        <strong>Data de publicação: </strong>{{publicacao}}
+                    </p>
+
+                    <p>
+                        <strong>Última atualização: </strong>{{ultima_atualizacao}}
+                    </p>
+
+                    <p>
+                        <strong>Número de acessos: </strong>{{visualizacoes}}
+                    </p>
+                </div>
+
+                <div id="conteudo_publi">
+                    <p>
+                        {{conteudo}}
+                    </p>
+                </div>
+
+                <p class="link">  
+                    <a href="../busca"> Buscar outras publicacoes </a>
+                </p>
+                
+            </div>
+        </div>
+
+        <a id="home-fixed" href="../../">HOME</a>
+    </div>
+
+</body>
+</html>

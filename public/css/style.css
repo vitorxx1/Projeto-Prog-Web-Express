@@ -148,7 +148,7 @@ li{
     margin-right: 30px;
 }
 
-#utlity-conta-botao{
+#utility-conta-botao{
     background: rgb(255, 122, 0);
     height: 48px;
     color: white;
@@ -160,11 +160,11 @@ li{
     min-width: auto;
 }
 
-#utlity-conta-botao:hover{
+#utility-conta-botao:hover{
     cursor: pointer;
 }
 
-#loginBtn{
+#utility-conta-acessar{
     background: white;
     border: 1px solid rgb(255, 122, 0);
     border-radius: 8px;
@@ -173,16 +173,14 @@ li{
     font-size: 11pt;
     height: 48px;
     padding: 3px 10px;
-    
 }
 
-#loginBtn:hover{
+#utility-conta-acessar:hover{
     background-color: rgb(223, 223, 223);
-    
     cursor: pointer;
 }
 
-#loginBtn:active{
+#utility-conta-acessar:active{
     border: 2px solid rgb(0, 0, 0);
 }
 
@@ -224,7 +222,7 @@ li{
     margin-top: 16px;
 }
 
-#link-aproveitar:hover{
+#link-aproveitar:hover, .link-funcionalidades:hover{
     background: rgb(255, 137, 27);
 }
 
@@ -275,10 +273,8 @@ button{
     border: none;
 }
 
-
-#conteiner-fipe{
+#conteiner-funcionalidades, #conteiner-fipe{
     position: relative;
-    display: none;
 }
 
 #title-div{
@@ -376,6 +372,37 @@ label{
     color: white;
     font-weight: 600;
     text-align: right;
+}
+
+.link-funcionalidades{
+    width: 25%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    background: rgb(255, 122, 0);
+    border: none;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+#home-fixed{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 5rem;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(255, 122, 0);
+    color: white;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
@@ -486,22 +513,4 @@ label{
     #conta-fixed{
         display: none;
     }
-
-    #content-div{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #forms-div{
-        align-items: center;
-    }
-
-    #result-div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 24px
-    }
 }
-

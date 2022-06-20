@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login_cadastro.css" />
+</head>
+<body>
+    <div class="container" >
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+        
+        <div class="content">      
+            <!--FORMULÁRIO DE LOGIN-->
+            <div id="login">
+                <form method="post" action="" enctype="multipart/form-data"> 
+                    <h1>Login</h1> 
+                    <p> 
+                        <label for="username">Username</label>
+                        <input id="username_login" name="username" required="required" type="text" placeholder="Digite aqui seu username"/>
+                    </p>
+                    
+                    <p> 
+                        <label for="senha">Senha</label>
+                        <input id="senha_login" name="senha" required="required" type="password" placeholder="Digite aqui sua senha" /> 
+                    </p>
+                    
+                    <p> 
+                        <input type="submit" value="Logar" /> 
+                    </p>
+                    
+                    <p class="link">
+                        Ainda não tem conta?
+                        <a href="./cadastro">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+
+            <a id="home-fixed" href="../">HOME</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -4,17 +4,9 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap"
-            rel="stylesheet"
-        />
-  
-        <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
         <title>Inter. Simplifica a vida.</title>
         <link rel="icon" type="image/x-icon" href="images/icon.png">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/loginModal.css">
     </head>
 
     <body>
@@ -75,10 +67,10 @@
 
                     <div id="header-container-utility">
                         <div id="utility-conta">
-                            <button id= "utlity-conta-botao">Abra a sua conta</button>
+                            <button id= "utility-conta-botao">Abra a sua conta</button>
 
                             <div>
-                                <button id="loginBtn">Acessar</button>
+                                <button id="utility-conta-acessar">Acessar</button>
                             </div>
 
                             <div id="utility-conta-bandeira">
@@ -156,87 +148,21 @@
                 </div>
             </main>
 
-            <!-- Modal -->
-            <div id="background-modal" class='modal-container'>
-                <div class=container>
-                    <button class="exitModal">
-                        <img  class="closeBtn" src="images/close-icon.png" alt="Fechar">
-                    </button>
-                    <div class=greeting>
-                        <span class='welcome'>Seja Bem-Vindo(a)</span>
-                        <span class='yourAccount'>Entre com seus dados para acessar sua conta</span>
-                    </div>
-                  
-                    <div class="content">
-                        <span class="errorMessage">Email e/ou senha incorretos!</span>
-                        <div class="content-area-login">
-                            <input id="email" type="text" placeholder="Insira seu e-mail">
-                        </div>
-                        <div class="content-area-password">
-                            <input id="password" type="password" placeholder="Insira sua senha">
-                        </div>
-                        <button type="submit" class="submitBtn" >Entrar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="conteiner-fipe" class='container-fipe'>
-                <div id="title-div">
-                    <h1 style="text-align: center;color: rgb(255, 122, 0);">Consulta de Tabela Fipe</h1>
-                </div>
-                
-                <div id = "content-div">
-                    <div id="forms-div">
-                        <p style="text-align: center;font-weight: 600;">Entre com os valores de busca</p>
-        
-                        <form id="form-fipe" action="#" autocomplete="off" >
-                            <div id="form-inputs">
-                                <label for="datalist-tipos">Tipo do Veículo</label><br>
-                                <input required class="datalist" list="datalist-tipos" id="input-datalist-tipos" placeholder="Digite e selecione um valor">
-                                <datalist id="datalist-tipos">
-                                    <option value="Carro">
-                                    <option value="Moto">
-                                    <option value="Caminhão">
-                                </datalist>
-                                <br>
-            
-                                <label for="datalist-marcas">Marca</label><br>
-                                <input required class="datalist" list="datalist-marcas" id="input-datalist-marcas" placeholder="Digite e selecione um valor">
-                                <datalist id="datalist-marcas"></datalist>
-                                <br>
-            
-                                <label for="datalist-modelos">Modelo</label><br>
-                                <input required class="datalist" list="datalist-modelos" id="input-datalist-modelos" placeholder="Digite e selecione um valor">
-                                <datalist id="datalist-modelos"></datalist>
-                                <br>
-            
-                                <label for="datalist-anos">Ano</label><br>
-                                <input required class="datalist" list="datalist-anos" id="input-datalist-anos" placeholder="Digite e selecione um valor">
-                                <datalist id="datalist-anos"></datalist>
-                                <br>
-                            </div>
-        
-                            <div id="form-submit">
-                                <input type="submit" value="Buscar">
-                            </div>
-                        </form>
-                    </div>
-        
-                    <div id="result-div">
-                        <p style="text-align: center;font-weight: 600;">Resultado da busca</p>
-                        <table id="result-fipe"></table>
-                    </div>
-                </div>
-            </div>
-
             <button id="conta-fixed">
                 ABRIR CONTA GRATUITA
             </button>
-        </div>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="javascript/script.js"></script>
-    <script src="javascript/modal.js"></script>
-    <script src="javascript/login.js"></script>
+            <div id="conteiner-funcionalidades" class='container-funcionalidades'>
+                <div id="title-div">
+                    <h1 style="text-align: center;color: rgb(255, 122, 0);">Funcionalidades</h1>
+                </div>
+                
+                <div id = "content-div">
+                    <a class="link-funcionalidades" href="/fipe">Consulta Fipe</a>
+                    <a class="link-funcionalidades" href="/publicacoes">Publicações</a>
+                    <a class="link-funcionalidades" href="/users">Perfis de Usuários</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de publicacoes</title>
+    <link rel="stylesheet" type="text/css" href="/css/publicacoes_busca.css">
+</head>
+<body>
+    
+    <div id="wrapper" >
+        
+        <div id="content">      
+            <!--FORMULÁRIO DE BUSCA DE PUBLICAÇÕES-->
+            <div id="publicacoes">
+                <form method="get" action="" enctype="multipart/form-data"> 
+                    <h1>Busca por Publicações</h1> 
+                    
+                    <p> 
+                        <label for="busca">Título da publicação ou parte dele</label>
+                        <input id="nome_cad" name="busca" required="required" type="text" placeholder="Digite aqui" />
+                    </p>
+                    
+                    <p> 
+                        <input type="submit" value="Buscar"/> 
+                    </p>
+                    
+                </form>
+
+                <h3>{{status}}</h3>
+                <div class="header_publicacoes">
+                    <div style="width: 60%; text-align:center">{{titulo}}</div>
+                    <div style="width: 25%; text-align:center">{{autor}}</div>
+                    <div style="width: 15%; text-align:center">{{data}}</div>
+                </div>
+                <ul>
+                    {{#publicacoes}}
+                        <li>
+                            <p>
+                                <div class="lista_publicacoes">
+                                    <div style="width: 60%;"><a href="busca/{{_id}}">{{titulo}}</a></div>
+                                    <div style="width: 25%; text-align:center">{{username}}</div>
+                                    <div style="width: 15%; text-align:center">{{publicacao}}</div>
+                                </div>
+                            </p>
+                        </li>
+                    {{/publicacoes}}
+                </ul>
+            </div>
+        </div>
+
+        <a id="home-fixed" href="../">HOME</a>
+    </div>
+
+</body>
+</html>

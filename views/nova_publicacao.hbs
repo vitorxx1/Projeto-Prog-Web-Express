@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova publicação</title>
+    <link rel="stylesheet" type="text/css" href="/css/publicacoes_busca.css">
+</head>
+<body>
+    
+    <div id="wrapper" >
+        
+        <div id="content">      
+            <!--FORMULÁRIO DE NOVA PUBLICAÇÃO-->
+            <div id="publicacoes">
+                <form method="post" action="" enctype="multipart/form-data"> 
+                    <h1>Nova Publicação</h1> 
+                    
+                    <p> 
+                        <label for="titulo">Título</label>
+                        <input id="nome_cad" name="titulo" required="required" type="text" placeholder="Digite aqui" />
+                    </p>
+
+                    <p> 
+                        <label for="conteudo">Conteúdo da publicação</label>
+                        <textarea id="texto_conteudo" name="conteudo" rows="15" cols="100"></textarea>
+                    </p>
+                    
+                    <p> 
+                        <input type="submit" value="Publicar"/> 
+                    </p>
+                    
+                </form>
+            </div>
+        </div>
+
+        <a id="home-fixed" href="../">HOME</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/login_cadastro.css" />
+</head>
+<body>
+    <div class="container" >
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+        
+        <div class="content">      
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action="" enctype="multipart/form-data"> 
+                    <h1>Cadastro</h1> 
+                    
+                    <p> 
+                        <label for="nome">Nome</label>
+                        <input id="nome_cad" name="nome" required="required" type="text" placeholder="Digite aqui seu nome" />
+                    </p>
+
+                    <p> 
+                        <label for="username">Username</label>
+                        <input id="username_cad" name="username" required="required" type="text" placeholder="Digite aqui seu username" />
+                    </p>
+                    
+                    <p> 
+                        <label for="email">E-mail</label>
+                        <input id="email_cad" name="email" required="required" type="email" placeholder="Digite aqui seu e-mail"/> 
+                    </p>
+                    
+                    <p> 
+                        <label for="senha">Senha</label>
+                        <input id="senha_cad" name="senha" required="required" type="password" placeholder="Digite aqui sua senha"/>
+                    </p>
+                    
+                    <p> 
+                        <input type="submit" value="Cadastrar"/> 
+                    </p>
+                    
+                    <p class="link">  
+                        Já tem conta?
+                        <a href="./login"> Ir para Login </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <a id="home-fixed" href="../">HOME</a>
+    </div>
+
+</body>
+</html>

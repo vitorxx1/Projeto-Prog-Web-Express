@@ -64,7 +64,7 @@ module.exports = class User{
     }
 
     static async startConn(){
-        return await MongoClient.connect("mongodb://localhost:27017/projeto_express");
+        return await MongoClient.connect("mongodb+srv://vitor:kKJmuosuPOIf4beC@cluster0.b1o80.mongodb.net/?retryWrites=true&w=majority");
     }
 
 }

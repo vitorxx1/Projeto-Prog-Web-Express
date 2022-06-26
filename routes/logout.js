@@ -13,24 +13,15 @@ session({secret: "Your secret key",
 });
 
 router.get('/', function(req, res){
-    res.render('login');
+    req.session.destroy();
+    res.redirect('login');
  });
 
 router.post("/", async function(req, res){
-    var record = await User.findOne(req.body.username);
-    var hSenha = sha256(req.body.senha).toString();
-    var senhaCorreta = await User.findUserSenha(req.body.username, hSenha);
-
-    if(!record){
-        console.log("usuário nao existe")
-        res.redirect('/login');
-    } else if(senhaCorreta) {
-        req.session.user = record;
-        req.session.user.username = req.body.username;
-
+    if(req.session.user != null){
+        res.redirect('login');
+    } else {
         res.redirect('/');
-    }else{
-        res.redirect('/login');
     }
 })
 

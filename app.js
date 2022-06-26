@@ -5,6 +5,7 @@ var multer = require('multer');
 var upload = multer();
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
+const dotenv = require('dotenv').config();
 
 //parsers
 app.use(bodyParser.json()); 

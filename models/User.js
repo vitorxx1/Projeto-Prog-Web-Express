@@ -64,7 +64,7 @@ module.exports = class User{
     }
 
     static async startConn(){
-        return await MongoClient.connect("mongodb+srv://vitor:kKJmuosuPOIf4beC@cluster0.b1o80.mongodb.net/?retryWrites=true&w=majority");
+        return await MongoClient.connect(process.env.MONGO_URL);
     }
 
 }
